@@ -4,7 +4,7 @@ on: [workflow_dispatch, pull_request, issues]
 
 jobs:
   check-quality:
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux]
     name: A job to check my code quality
     steps:
     - name: Check code meets quality standards
